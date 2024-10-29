@@ -138,6 +138,8 @@ export type CustomerAccountOptions = {
   customerAccountUrl?: string;
   /** The shop id. Mock.shop doesn't automatically supply shopId. Use `npx shopify hydrogen env pull` to link your store credentials */
   shopId?: string;
+  /** the shop name store domain */
+  storeDomain?: string;
   /** Override the version of the API */
   customerApiVersion?: string;
   /** The object for the current Request. It should be provided by your platform. */
