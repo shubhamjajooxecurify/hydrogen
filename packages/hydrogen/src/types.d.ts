@@ -50,6 +50,8 @@ export interface HydrogenEnv {
   PUBLIC_CUSTOMER_ACCOUNT_API_URL: string;
   PUBLIC_CHECKOUT_DOMAIN: string;
   SHOP_ID: string;
+  CUSTOM_APP_STOREFRONT_ACCESS_TOKEN: string;
+  CUSTOM_APP_ACCESS_TOKEN: string;
 }
 
 export type StorefrontHeaders = {

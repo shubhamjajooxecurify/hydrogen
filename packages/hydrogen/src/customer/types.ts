@@ -140,6 +140,10 @@ export type CustomerAccountOptions = {
   shopId?: string;
   /** the shop name store domain */
   storeDomain?: string;
+  /** the shop name store domain */
+  storefrontAccessToken?: string;
+  /** the shop name store domain */
+  adminAccessToken?: string;
   /** Override the version of the API */
   customerApiVersion?: string;
   /** The object for the current Request. It should be provided by your platform. */

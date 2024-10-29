@@ -55,6 +55,8 @@ export function createCustomerAccountClient({
   customerAccountUrl: deprecatedCustomerAccountUrl,
   shopId,
   storeDomain,
+  storefrontAccessToken,
+  adminAccessToken,
   customerApiVersion = DEFAULT_CUSTOMER_API_VERSION,
   request,
   waitUntil,
@@ -127,7 +129,7 @@ export function createCustomerAccountClient({
         'Content-Type': 'application/json',
         'User-Agent': USER_AGENT,
         Origin: httpsOrigin,
-        'X-Shopify-Storefront-Access-Token': '996974149555cd92bc6c5f80ec1cf8ad',
+        'X-Shopify-Storefront-Access-Token': `${storefrontAccessToken}`,
       },
       body: JSON.stringify({query, variables}),
     });
@@ -226,7 +228,7 @@ export function createCustomerAccountClient({
         'Content-Type': 'application/json',
         'User-Agent': USER_AGENT,
         Origin: httpsOrigin,
-        'X-Shopify-Access-Token': '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',
+        'X-Shopify-Access-Token': `${adminAccessToken}`,
       },
       body: JSON.stringify({query, variables}),
     });

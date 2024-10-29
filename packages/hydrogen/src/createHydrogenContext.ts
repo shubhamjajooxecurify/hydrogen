@@ -203,6 +203,8 @@ export function createHydrogenContext<
     customerAccountId: env.PUBLIC_CUSTOMER_ACCOUNT_API_CLIENT_ID,
     shopId: env.SHOP_ID,
     storeDomain: env.PUBLIC_STORE_DOMAIN,
+    storefrontAccessToken: env.CUSTOM_APP_STOREFRONT_ACCESS_TOKEN,
+    adminAccessToken: env.CUSTOM_APP_ACCESS_TOKEN,
 
     // deprecated - keep until next major release
     customerAccountUrl: env.PUBLIC_CUSTOMER_ACCOUNT_API_URL,
